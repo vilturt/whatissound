@@ -1,0 +1,151 @@
+body {
+    margin: 30px;
+    background-color: lightgoldenrodyellow;
+  }
+
+a {
+    color: lightcoral;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+.anchorheader {
+    color: lightgoldenrodyellow;
+}
+
+a:hover {
+    color:  lightgoldenrodyellow;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.leftered {
+    text-align: left;
+    font-size: 70%;
+    font-weight: lighter;
+    font-family: 'Roboto Slab', serif;
+}
+
+.headerish {
+    font-size: 120%;
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    color: lightcoral;
+    background-color: lightcoral;
+    height: 2px;
+  }
+  
+img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+  .sidebar {
+          grid-area: sidebar;
+      }
+  
+      .sidebar2 {
+          grid-area: sidebar2;
+      }
+  
+      .content {
+          grid-area: content;
+      }
+  
+      .header {
+          grid-area: header;
+          
+      }
+  
+      .footer {
+          grid-area: footer;
+      }
+  
+      .wrapper {
+          color: #444;
+      }
+  
+    .wrapper {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-areas:
+       "header"
+       "sidebar"
+       "content"
+       "sidebar2"
+       "footer"
+    }
+  
+      @media only screen and (min-width: 500px)  {
+      .wrapper {
+  
+          grid-template-columns: 20% auto;
+          grid-template-areas:
+      "header   header"
+          "sidebar  content"
+          "sidebar2 sidebar2"
+          "footer   footer";
+      }
+      }
+  
+      @media only screen and (min-width: 600px)   {
+          .wrapper {
+        grid-gap: 20px;
+              grid-template-columns: 30% auto 100%;
+              grid-template-areas:
+        "header  header  header"
+              "sidebar content content "
+              "footer  footer  footer";
+              max-width: 900px;
+          }
+      }
+  
+  .box {
+    background-color: #444;
+    color: lightgoldenrodyellow;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+    word-break:break-word; 
+  }
+
+  
+  .header {
+    background-color: #999;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 3px 3px lightgoldenrodyellow;
+    font-size: 210%;
+    font-weight: 900;
+  }
+
+  .footer {
+    background-color: #999;
+    color: lightgoldenrodyellow;
+    font-size: 80%;
+  }
+
+  .sidebar2 {
+    background-color: #ccc;
+    color: #444;
+  }
